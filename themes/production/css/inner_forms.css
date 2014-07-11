@@ -1,0 +1,39 @@
+.form_caption{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.modal_form .errorMessage{
+    color: #ff0000;
+    position: absolute;
+    margin-top: -25px;
+    z-index: -10;
+}
+
+.modal_form .row{
+    margin-bottom: 30px;
+}
+
+.modal_form input[type="text"], .modal_form input[type="password"], .modal_form input[type="email"], .modal_form textarea, .modal_form select{
+    margin: 0;
+}
+/*
+.blur_bg :not(.modal_form) li,
+.blur_bg :not(.modal_form) span,
+.blur_bg :not(.modal_form) h1,
+.blur_bg :not(.modal_form) h2,
+.blur_bg :not(.modal_form) h3,
+.blur_bg :not(.modal_form) p,
+.blur_bg :not(.modal_form) a,
+.blur_bg :not(.modal_form) div,
+.blur_bg :not(.modal_form) label{
+    color: #C0C0C0 !important;
+    opacity: 0.8 !important;
+    text-shadow: 0 0 3px #000000 !important;
+    -webkit-transition:all .5s ease !important;
+    -moz-transition:all .5s ease !important;
+    -o-transition:all .5s ease !important;
+    -ms-transition:all .5s ease !important;
+    transition:all .5s ease !important;
+}
+*/

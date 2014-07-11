@@ -1,0 +1,956 @@
+2014/07/04 23:12:15 [error] [php] Object of class CTheme could not be converted to string (/private/var/www/htdocs/protected/components/AController.php:20)
+Stack trace:
+#0 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /private/var/www/htdocs/index.php(12): CWebApplication->run()
+REQUEST_URI=/htdocs/index.php?r=news/admin
+in /private/var/www/htdocs/protected/components/AController.php (20)
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (37)
+in /private/var/www/htdocs/index.php (12)
+2014/07/06 23:31:29 [error] [exception.CException] exception 'CException' with message 'Контроллер DefaultController не может найти представление "index".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/DefaultController.php(13): CController->render('index', Array)
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news
+---
+2014/07/06 23:31:42 [error] [exception.CException] exception 'CException' with message 'Контроллер DefaultController не может найти представление "index".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/DefaultController.php(13): CController->render('index', Array)
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news
+HTTP_REFERER=http://localhost/htdocs/index.php
+---
+2014/07/06 23:37:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "news".' in /private/var/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news')
+#1 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /private/var/www/htdocs/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/htdocs/index.php?r=news
+HTTP_REFERER=http://localhost/htdocs/index.php
+---
+2014/07/07 09:20:03 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "index".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): CController->render('index')
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:20:03 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "index".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): CController->render('index')
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:20:04 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "index".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): CController->render('index')
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:20:04 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "index".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): CController->render('index')
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:20:04 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "index".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): CController->render('index')
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:20:04 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "index".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): CController->render('index')
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:20:05 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "index".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): CController->render('index')
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:23:05 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "index".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): CController->render('index')
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:23:06 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "index".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): CController->render('index')
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:23:06 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "index".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): CController->render('index')
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:23:07 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "index".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): CController->render('index')
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:25:44 [error] [php] Undefined variable: model (/private/var/www/htdocs/themes/admin/views/news/admin/index.php:18)
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(869): AdminController->renderFile()
+#1 /private/var/www/framework/web/CController.php(782): AdminController->renderPartial()
+#2 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): AdminController->render()
+#3 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#4 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /private/var/www/framework/web/CController.php(286): AdminController->runAction()
+#6 /private/var/www/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#7 /private/var/www/framework/web/CWebApplication.php(282): AdminController->run()
+#8 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /private/var/www/htdocs/index.php(12): CWebApplication->run()
+REQUEST_URI=/htdocs/index.php?r=news/admin
+in /private/var/www/htdocs/themes/admin/views/news/admin/index.php (18)
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (7)
+in /private/var/www/htdocs/index.php (12)
+2014/07/07 09:26:31 [error] [php] Undefined variable: model (/private/var/www/htdocs/themes/admin/views/news/admin/index.php:18)
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(869): AdminController->renderFile()
+#1 /private/var/www/framework/web/CController.php(782): AdminController->renderPartial()
+#2 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): AdminController->render()
+#3 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#4 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /private/var/www/framework/web/CController.php(286): AdminController->runAction()
+#6 /private/var/www/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#7 /private/var/www/framework/web/CWebApplication.php(282): AdminController->run()
+#8 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /private/var/www/htdocs/index.php(12): CWebApplication->run()
+REQUEST_URI=/htdocs/index.php?r=news/admin
+in /private/var/www/htdocs/themes/admin/views/news/admin/index.php (18)
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (7)
+in /private/var/www/htdocs/index.php (12)
+2014/07/07 09:26:31 [error] [php] Undefined variable: model (/private/var/www/htdocs/themes/admin/views/news/admin/index.php:18)
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(869): AdminController->renderFile()
+#1 /private/var/www/framework/web/CController.php(782): AdminController->renderPartial()
+#2 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): AdminController->render()
+#3 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#4 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /private/var/www/framework/web/CController.php(286): AdminController->runAction()
+#6 /private/var/www/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#7 /private/var/www/framework/web/CWebApplication.php(282): AdminController->run()
+#8 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /private/var/www/htdocs/index.php(12): CWebApplication->run()
+REQUEST_URI=/htdocs/index.php?r=news/admin
+in /private/var/www/htdocs/themes/admin/views/news/admin/index.php (18)
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (7)
+in /private/var/www/htdocs/index.php (12)
+2014/07/07 09:26:32 [error] [php] Undefined variable: model (/private/var/www/htdocs/themes/admin/views/news/admin/index.php:18)
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(869): AdminController->renderFile()
+#1 /private/var/www/framework/web/CController.php(782): AdminController->renderPartial()
+#2 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): AdminController->render()
+#3 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#4 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /private/var/www/framework/web/CController.php(286): AdminController->runAction()
+#6 /private/var/www/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#7 /private/var/www/framework/web/CWebApplication.php(282): AdminController->run()
+#8 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /private/var/www/htdocs/index.php(12): CWebApplication->run()
+REQUEST_URI=/htdocs/index.php?r=news/admin
+in /private/var/www/htdocs/themes/admin/views/news/admin/index.php (18)
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (7)
+in /private/var/www/htdocs/index.php (12)
+2014/07/07 09:26:32 [error] [php] Undefined variable: model (/private/var/www/htdocs/themes/admin/views/news/admin/index.php:18)
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(869): AdminController->renderFile()
+#1 /private/var/www/framework/web/CController.php(782): AdminController->renderPartial()
+#2 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): AdminController->render()
+#3 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#4 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /private/var/www/framework/web/CController.php(286): AdminController->runAction()
+#6 /private/var/www/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#7 /private/var/www/framework/web/CWebApplication.php(282): AdminController->run()
+#8 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /private/var/www/htdocs/index.php(12): CWebApplication->run()
+REQUEST_URI=/htdocs/index.php?r=news/admin
+in /private/var/www/htdocs/themes/admin/views/news/admin/index.php (18)
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (7)
+in /private/var/www/htdocs/index.php (12)
+2014/07/07 09:26:32 [error] [php] Undefined variable: model (/private/var/www/htdocs/themes/admin/views/news/admin/index.php:18)
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(869): AdminController->renderFile()
+#1 /private/var/www/framework/web/CController.php(782): AdminController->renderPartial()
+#2 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): AdminController->render()
+#3 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#4 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /private/var/www/framework/web/CController.php(286): AdminController->runAction()
+#6 /private/var/www/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#7 /private/var/www/framework/web/CWebApplication.php(282): AdminController->run()
+#8 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /private/var/www/htdocs/index.php(12): CWebApplication->run()
+REQUEST_URI=/htdocs/index.php?r=news/admin
+in /private/var/www/htdocs/themes/admin/views/news/admin/index.php (18)
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (7)
+in /private/var/www/htdocs/index.php (12)
+2014/07/07 09:26:32 [error] [php] Undefined variable: model (/private/var/www/htdocs/themes/admin/views/news/admin/index.php:18)
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(869): AdminController->renderFile()
+#1 /private/var/www/framework/web/CController.php(782): AdminController->renderPartial()
+#2 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): AdminController->render()
+#3 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#4 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /private/var/www/framework/web/CController.php(286): AdminController->runAction()
+#6 /private/var/www/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#7 /private/var/www/framework/web/CWebApplication.php(282): AdminController->run()
+#8 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /private/var/www/htdocs/index.php(12): CWebApplication->run()
+REQUEST_URI=/htdocs/index.php?r=news/admin
+in /private/var/www/htdocs/themes/admin/views/news/admin/index.php (18)
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (7)
+in /private/var/www/htdocs/index.php (12)
+2014/07/07 09:26:32 [error] [php] Undefined variable: model (/private/var/www/htdocs/themes/admin/views/news/admin/index.php:18)
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(869): AdminController->renderFile()
+#1 /private/var/www/framework/web/CController.php(782): AdminController->renderPartial()
+#2 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): AdminController->render()
+#3 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#4 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /private/var/www/framework/web/CController.php(286): AdminController->runAction()
+#6 /private/var/www/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#7 /private/var/www/framework/web/CWebApplication.php(282): AdminController->run()
+#8 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /private/var/www/htdocs/index.php(12): CWebApplication->run()
+REQUEST_URI=/htdocs/index.php?r=news/admin
+in /private/var/www/htdocs/themes/admin/views/news/admin/index.php (18)
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (7)
+in /private/var/www/htdocs/index.php (12)
+2014/07/07 09:26:32 [error] [php] Undefined variable: model (/private/var/www/htdocs/themes/admin/views/news/admin/index.php:18)
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(869): AdminController->renderFile()
+#1 /private/var/www/framework/web/CController.php(782): AdminController->renderPartial()
+#2 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): AdminController->render()
+#3 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#4 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /private/var/www/framework/web/CController.php(286): AdminController->runAction()
+#6 /private/var/www/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#7 /private/var/www/framework/web/CWebApplication.php(282): AdminController->run()
+#8 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /private/var/www/htdocs/index.php(12): CWebApplication->run()
+REQUEST_URI=/htdocs/index.php?r=news/admin
+in /private/var/www/htdocs/themes/admin/views/news/admin/index.php (18)
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (7)
+in /private/var/www/htdocs/index.php (12)
+2014/07/07 09:26:33 [error] [php] Undefined variable: model (/private/var/www/htdocs/themes/admin/views/news/admin/index.php:18)
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(869): AdminController->renderFile()
+#1 /private/var/www/framework/web/CController.php(782): AdminController->renderPartial()
+#2 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): AdminController->render()
+#3 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#4 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /private/var/www/framework/web/CController.php(286): AdminController->runAction()
+#6 /private/var/www/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#7 /private/var/www/framework/web/CWebApplication.php(282): AdminController->run()
+#8 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /private/var/www/htdocs/index.php(12): CWebApplication->run()
+REQUEST_URI=/htdocs/index.php?r=news/admin
+in /private/var/www/htdocs/themes/admin/views/news/admin/index.php (18)
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (7)
+in /private/var/www/htdocs/index.php (12)
+2014/07/07 09:26:33 [error] [php] Undefined variable: model (/private/var/www/htdocs/themes/admin/views/news/admin/index.php:18)
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(869): AdminController->renderFile()
+#1 /private/var/www/framework/web/CController.php(782): AdminController->renderPartial()
+#2 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): AdminController->render()
+#3 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#4 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /private/var/www/framework/web/CController.php(286): AdminController->runAction()
+#6 /private/var/www/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#7 /private/var/www/framework/web/CWebApplication.php(282): AdminController->run()
+#8 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /private/var/www/htdocs/index.php(12): CWebApplication->run()
+REQUEST_URI=/htdocs/index.php?r=news/admin
+in /private/var/www/htdocs/themes/admin/views/news/admin/index.php (18)
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (7)
+in /private/var/www/htdocs/index.php (12)
+2014/07/07 09:26:33 [error] [php] Undefined variable: model (/private/var/www/htdocs/themes/admin/views/news/admin/index.php:18)
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(869): AdminController->renderFile()
+#1 /private/var/www/framework/web/CController.php(782): AdminController->renderPartial()
+#2 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): AdminController->render()
+#3 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#4 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /private/var/www/framework/web/CController.php(286): AdminController->runAction()
+#6 /private/var/www/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#7 /private/var/www/framework/web/CWebApplication.php(282): AdminController->run()
+#8 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /private/var/www/htdocs/index.php(12): CWebApplication->run()
+REQUEST_URI=/htdocs/index.php?r=news/admin
+in /private/var/www/htdocs/themes/admin/views/news/admin/index.php (18)
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (7)
+in /private/var/www/htdocs/index.php (12)
+2014/07/07 09:26:33 [error] [php] Undefined variable: model (/private/var/www/htdocs/themes/admin/views/news/admin/index.php:18)
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(869): AdminController->renderFile()
+#1 /private/var/www/framework/web/CController.php(782): AdminController->renderPartial()
+#2 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(7): AdminController->render()
+#3 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#4 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /private/var/www/framework/web/CController.php(286): AdminController->runAction()
+#6 /private/var/www/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#7 /private/var/www/framework/web/CWebApplication.php(282): AdminController->run()
+#8 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /private/var/www/htdocs/index.php(12): CWebApplication->run()
+REQUEST_URI=/htdocs/index.php?r=news/admin
+in /private/var/www/htdocs/themes/admin/views/news/admin/index.php (18)
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (7)
+in /private/var/www/htdocs/index.php (12)
+2014/07/07 09:27:07 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "create".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(21): CController->render('create', Array)
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:27:08 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "create".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(21): CController->render('create', Array)
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:27:08 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "create".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(21): CController->render('create', Array)
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:27:08 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "create".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(21): CController->render('create', Array)
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:27:08 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "create".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(21): CController->render('create', Array)
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:27:09 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "create".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(21): CController->render('create', Array)
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:27:09 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "create".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(21): CController->render('create', Array)
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:27:09 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "create".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(21): CController->render('create', Array)
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:27:09 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "create".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(21): CController->render('create', Array)
+#2 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#7 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#8 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /private/var/www/htdocs/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/07 09:42:56 [error] [exception.CException] exception 'CException' with message 'Фильтр "rights" неверный. Контроллер "AdminController" не содержит метода "filterrights".' in /private/var/www/framework/web/filters/CInlineFilter.php:46
+Stack trace:
+#0 /private/var/www/framework/web/filters/CFilterChain.php(72): CInlineFilter::create(Object(AdminController), 'rights')
+#1 /private/var/www/framework/web/CController.php(291): CFilterChain::create(Object(AdminController), Object(CInlineAction), Array)
+#2 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#4 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#5 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /private/var/www/htdocs/index.php(12): CApplication->run()
+#7 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=news/admin
+---
+2014/07/07 09:42:57 [error] [exception.CException] exception 'CException' with message 'Фильтр "rights" неверный. Контроллер "AdminController" не содержит метода "filterrights".' in /private/var/www/framework/web/filters/CInlineFilter.php:46
+Stack trace:
+#0 /private/var/www/framework/web/filters/CFilterChain.php(72): CInlineFilter::create(Object(AdminController), 'rights')
+#1 /private/var/www/framework/web/CController.php(291): CFilterChain::create(Object(AdminController), Object(CInlineAction), Array)
+#2 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#4 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#5 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /private/var/www/htdocs/index.php(12): CApplication->run()
+#7 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=news/admin
+---
+2014/07/07 09:42:57 [error] [exception.CException] exception 'CException' with message 'Фильтр "rights" неверный. Контроллер "AdminController" не содержит метода "filterrights".' in /private/var/www/framework/web/filters/CInlineFilter.php:46
+Stack trace:
+#0 /private/var/www/framework/web/filters/CFilterChain.php(72): CInlineFilter::create(Object(AdminController), 'rights')
+#1 /private/var/www/framework/web/CController.php(291): CFilterChain::create(Object(AdminController), Object(CInlineAction), Array)
+#2 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#4 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#5 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /private/var/www/htdocs/index.php(12): CApplication->run()
+#7 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=news/admin
+---
+2014/07/07 09:42:57 [error] [exception.CException] exception 'CException' with message 'Фильтр "rights" неверный. Контроллер "AdminController" не содержит метода "filterrights".' in /private/var/www/framework/web/filters/CInlineFilter.php:46
+Stack trace:
+#0 /private/var/www/framework/web/filters/CFilterChain.php(72): CInlineFilter::create(Object(AdminController), 'rights')
+#1 /private/var/www/framework/web/CController.php(291): CFilterChain::create(Object(AdminController), Object(CInlineAction), Array)
+#2 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#4 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#5 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /private/var/www/htdocs/index.php(12): CApplication->run()
+#7 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=news/admin
+---
+2014/07/07 09:42:57 [error] [exception.CException] exception 'CException' with message 'Фильтр "rights" неверный. Контроллер "AdminController" не содержит метода "filterrights".' in /private/var/www/framework/web/filters/CInlineFilter.php:46
+Stack trace:
+#0 /private/var/www/framework/web/filters/CFilterChain.php(72): CInlineFilter::create(Object(AdminController), 'rights')
+#1 /private/var/www/framework/web/CController.php(291): CFilterChain::create(Object(AdminController), Object(CInlineAction), Array)
+#2 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#4 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#5 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /private/var/www/htdocs/index.php(12): CApplication->run()
+#7 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=news/admin
+---
+2014/07/07 10:43:40 [error] [exception.CException] exception 'CException' with message 'Фильтр "rights" неверный. Контроллер "AdminController" не содержит метода "filterrights".' in /private/var/www/framework/web/filters/CInlineFilter.php:46
+Stack trace:
+#0 /private/var/www/framework/web/filters/CFilterChain.php(72): CInlineFilter::create(Object(AdminController), 'rights')
+#1 /private/var/www/framework/web/CController.php(291): CFilterChain::create(Object(AdminController), Object(CInlineAction), Array)
+#2 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#4 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#5 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /private/var/www/htdocs/index.php(12): CApplication->run()
+#7 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=news/admin
+---
+2014/07/07 17:25:29 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1404739529' for column 'created' at row 1. Выполнявшийся SQL-запрос: INSERT INTO `tbl_news` (`name`, `title`, `description`, `keywords`, `content`, `created`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (26)
+in /private/var/www/htdocs/protected/modules/rights/components/RController.php (36)
+in /private/var/www/htdocs/index.php (12)
+2014/07/07 17:25:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1404739529' for column 'created' at row 1. The SQL statement executed was: INSERT INTO `tbl_news` (`name`, `title`, `description`, `keywords`, `content`, `created`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in /private/var/www/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /private/var/www/framework/db/ar/CActiveRecord.php(1077): CDbCommand->execute()
+#1 /private/var/www/framework/db/ar/CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(26): CActiveRecord->save()
+#3 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionCreate()
+#4 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /private/var/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /private/var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /private/var/www/htdocs/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /private/var/www/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /private/var/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /private/var/www/framework/web/CController.php(291): CFilterChain->run()
+#11 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /private/var/www/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin/crea...')
+#14 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /private/var/www/htdocs/index.php(12): CApplication->run()
+#16 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin/create
+HTTP_REFERER=http://localhost/htdocs/index.php?r=news/admin/create
+---
+2014/07/07 17:33:43 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1404740023' for column 'created' at row 1. Выполнявшийся SQL-запрос: INSERT INTO `tbl_news` (`name`, `title`, `description`, `keywords`, `content`, `created`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (26)
+in /private/var/www/htdocs/protected/modules/rights/components/RController.php (36)
+in /private/var/www/htdocs/index.php (12)
+2014/07/07 17:33:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1404740023' for column 'created' at row 1. The SQL statement executed was: INSERT INTO `tbl_news` (`name`, `title`, `description`, `keywords`, `content`, `created`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in /private/var/www/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /private/var/www/framework/db/ar/CActiveRecord.php(1077): CDbCommand->execute()
+#1 /private/var/www/framework/db/ar/CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(26): CActiveRecord->save()
+#3 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionCreate()
+#4 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /private/var/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /private/var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /private/var/www/htdocs/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /private/var/www/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /private/var/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /private/var/www/framework/web/CController.php(291): CFilterChain->run()
+#11 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /private/var/www/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin/crea...')
+#14 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /private/var/www/htdocs/index.php(12): CApplication->run()
+#16 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin/create
+HTTP_REFERER=http://localhost/htdocs/index.php?r=news/admin/create
+---
+2014/07/07 17:40:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "view".' in /private/var/www/framework/web/CController.php:483
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(270): CController->missingAction('view')
+#1 /private/var/www/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin/view')
+#3 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /private/var/www/htdocs/index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin/view&id=1
+HTTP_REFERER=http://localhost/htdocs/index.php?r=news/admin/create
+---
+2014/07/07 17:40:39 [error] [php] require(): Filename cannot be empty (/private/var/www/framework/web/CBaseController.php:130)
+Stack trace:
+#0 /private/var/www/framework/zii/widgets/CListView.php(291): AdminController->renderFile()
+#1 /private/var/www/framework/zii/widgets/CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 /private/var/www/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback()
+#4 /private/var/www/framework/zii/widgets/CBaseListView.php(135): CListView->renderContent()
+#5 /private/var/www/framework/web/CBaseController.php(173): CListView->run()
+#6 /private/var/www/htdocs/themes/admin/views/news/admin/index.php(25): AdminController->widget()
+#7 /private/var/www/framework/web/CBaseController.php(126): require()
+#8 /private/var/www/framework/web/CBaseController.php(95): AdminController->renderInternal()
+#9 /private/var/www/framework/web/CController.php(869): AdminController->renderFile()
+#10 /private/var/www/framework/web/CController.php(782): AdminController->renderPartial()
+#11 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(13): AdminController->render()
+#12 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#13 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /private/var/www/framework/web/filters/CFilterChain.php(133): AdminController->runAction()
+#15 /private/var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /private/var/www/htdocs/protected/modules/rights/components/RController.php(36): RightsFilter->filter()
+#17 /private/var/www/framework/web/filters/CInlineFilter.php(58): AdminController->filterRights()
+#18 /private/var/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#19 /private/var/www/framework/web/CController.php(291): CFilterChain->run()
+#20 /private/var/www/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#21 /private/var/www/framework/web/CWebApplication.php(282): AdminController->run()
+#22 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#23 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /private/var/www/htdocs/index.php(12): CWebApplication->run()
+REQUEST_URI=/htdocs/index.php?r=news/admin
+in /private/var/www/htdocs/themes/admin/views/news/admin/index.php (25)
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (13)
+in /private/var/www/htdocs/protected/modules/rights/components/RController.php (36)
+2014/07/07 17:40:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Необходима авторизация' in /private/var/www/framework/web/auth/CWebUser.php:394
+Stack trace:
+#0 /private/var/www/framework/gii/GiiModule.php(177): CWebUser->loginRequired()
+#1 /private/var/www/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(CrudGenerator), Object(CInlineAction))
+#2 /private/var/www/framework/web/CWebApplication.php(282): CController->run('code')
+#3 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud/code')
+#4 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /private/var/www/htdocs/index.php(12): CApplication->run()
+#6 {main}
+REQUEST_URI=/htdocs/index.php?r=gii/crud/code&id=8
+HTTP_REFERER=http://localhost/htdocs/index.php?r=gii/crud/index
+---
+2014/07/07 17:44:50 [error] [php] Undefined variable: model (/private/var/www/htdocs/themes/admin/views/news/admin/index.php:53)
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(869): AdminController->renderFile()
+#1 /private/var/www/framework/web/CController.php(782): AdminController->renderPartial()
+#2 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(13): AdminController->render()
+#3 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#4 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /private/var/www/framework/web/filters/CFilterChain.php(133): AdminController->runAction()
+#6 /private/var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /private/var/www/htdocs/protected/modules/rights/components/RController.php(36): RightsFilter->filter()
+#8 /private/var/www/framework/web/filters/CInlineFilter.php(58): AdminController->filterRights()
+#9 /private/var/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /private/var/www/framework/web/CController.php(291): CFilterChain->run()
+#11 /private/var/www/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#12 /private/var/www/framework/web/CWebApplication.php(282): AdminController->run()
+#13 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /private/var/www/htdocs/index.php(12): CWebApplication->run()
+REQUEST_URI=/htdocs/index.php?r=news/admin
+in /private/var/www/htdocs/themes/admin/views/news/admin/index.php (53)
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (13)
+in /private/var/www/htdocs/protected/modules/rights/components/RController.php (36)
+2014/07/07 17:45:34 [error] [exception.CException] exception 'CException' with message 'Контроллер AdminController не может найти представление "_search".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/htdocs/themes/admin/views/news/admin/index.php(54): CController->renderPartial('_search', Array)
+#1 /private/var/www/framework/web/CBaseController.php(126): require('/private/var/ww...')
+#2 /private/var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/private/var/ww...', Array, true)
+#3 /private/var/www/framework/web/CController.php(869): CBaseController->renderFile('/private/var/ww...', Array, true)
+#4 /private/var/www/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#5 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(17): CController->render('index', Array)
+#6 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#7 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /private/var/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /private/var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /private/var/www/htdocs/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#11 /private/var/www/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#12 /private/var/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /private/var/www/framework/web/CController.php(291): CFilterChain->run()
+#14 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#16 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin')
+#17 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /private/var/www/htdocs/index.php(12): CApplication->run()
+#19 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin
+HTTP_REFERER=http://localhost/htdocs/index.php?r=admin
+---
+2014/07/08 22:37:04 [error] [php] Undefined variable: news (/private/var/www/htdocs/themes/production/views/news/default/index.php:10)
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(869): DefaultController->renderFile()
+#1 /private/var/www/framework/web/CController.php(782): DefaultController->renderPartial()
+#2 /private/var/www/htdocs/protected/modules/news/controllers/DefaultController.php(11): DefaultController->render()
+#3 /private/var/www/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#4 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /private/var/www/framework/web/CController.php(286): DefaultController->runAction()
+#6 /private/var/www/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#7 /private/var/www/framework/web/CWebApplication.php(282): DefaultController->run()
+#8 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /private/var/www/htdocs/index.php(12): CWebApplication->run()
+REQUEST_URI=/htdocs/index.php?r=news
+in /private/var/www/htdocs/themes/production/views/news/default/index.php (10)
+in /private/var/www/htdocs/protected/modules/news/controllers/DefaultController.php (11)
+in /private/var/www/htdocs/index.php (12)
+2014/07/09 09:14:19 [error] [exception.CException] exception 'CException' with message 'Контроллер DefaultController не может найти представление "view".' in /private/var/www/framework/web/CController.php:878
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#1 /private/var/www/htdocs/protected/modules/news/controllers/DefaultController.php(24): CController->render('view', Array)
+#2 /private/var/www/htdocs/protected/modules/news/controllers/DefaultController.php(8): DefaultController->view('napryazhenniy_p...')
+#3 [internal function]: DefaultController->actionIndex('napryazhenniy_p...')
+#4 /private/var/www/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#5 /private/var/www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#6 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /private/var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /private/var/www/framework/web/CWebApplication.php(282): CController->run('')
+#10 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news')
+#11 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /private/var/www/htdocs/index.php(12): CApplication->run()
+#13 {main}
+REQUEST_URI=/htdocs/index.php?r=news&link=napryazhenniy_pozitivizm_v_xxi_veke
+HTTP_REFERER=http://localhost/htdocs/index.php?r=news
+---
+2014/07/09 09:31:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "projects".' in /private/var/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#1 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /private/var/www/htdocs/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/htdocs/index.php?r=projects
+HTTP_REFERER=http://localhost/htdocs/index.php?r=site/page&view=about
+---
+2014/07/09 22:54:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "update".' in /private/var/www/framework/web/CController.php:483
+Stack trace:
+#0 /private/var/www/framework/web/CController.php(270): CController->missingAction('update')
+#1 /private/var/www/framework/web/CWebApplication.php(282): CController->run('update')
+#2 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin/upda...')
+#3 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /private/var/www/htdocs/index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin/update&id=1
+HTTP_REFERER=http://localhost/htdocs/index.php?r=news/admin
+---
+2014/07/11 09:02:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin/news".' in /private/var/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/news')
+#1 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /private/var/www/htdocs/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/htdocs/index.php?r=admin/news
+---
+2014/07/11 09:37:33 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/private/var/www/framework/web/helpers/CHtml.php:103)
+Stack trace:
+#0 /private/var/www/framework/web/helpers/CHtml.php(158): renderAttributes()
+#1 /private/var/www/framework/web/helpers/CHtml.php(580): tag()
+#2 /private/var/www/htdocs/themes/admin/views/news/admin/_form.php(59): label()
+#3 /private/var/www/framework/web/CBaseController.php(126): require()
+#4 /private/var/www/framework/web/CBaseController.php(95): AdminController->renderInternal()
+#5 /private/var/www/framework/web/CController.php(869): AdminController->renderFile()
+#6 /private/var/www/htdocs/themes/admin/views/news/admin/create.php(18): AdminController->renderPartial()
+#7 /private/var/www/framework/web/CBaseController.php(126): require()
+#8 /private/var/www/framework/web/CBaseController.php(95): AdminController->renderInternal()
+#9 /private/var/www/framework/web/CController.php(869): AdminController->renderFile()
+#10 /private/var/www/framework/web/CController.php(782): AdminController->renderPartial()
+#11 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(36): AdminController->render()
+#12 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionCreate()
+#13 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /private/var/www/framework/web/filters/CFilterChain.php(133): AdminController->runAction()
+#15 /private/var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /private/var/www/htdocs/protected/modules/rights/components/RController.php(36): RightsFilter->filter()
+#17 /private/var/www/framework/web/filters/CInlineFilter.php(58): AdminController->filterRights()
+#18 /private/var/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#19 /private/var/www/framework/web/CController.php(291): CFilterChain->run()
+#20 /private/var/www/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#21 /private/var/www/framework/web/CWebApplication.php(282): AdminController->run()
+#22 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#23 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /private/var/www/htdocs/index.php(12): CWebApplication->run()
+REQUEST_URI=/htdocs/index.php?r=news/admin/create
+in /private/var/www/htdocs/themes/admin/views/news/admin/_form.php (59)
+in /private/var/www/htdocs/themes/admin/views/news/admin/create.php (18)
+in /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php (36)
+2014/07/11 10:52:44 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "ERedactorWidget.class".' in /private/var/www/framework/base/CComponent.php:173
+Stack trace:
+#0 /private/var/www/framework/web/CWidgetFactory.php(161): CComponent->__set('class', 'err')
+#1 /private/var/www/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(AdminController), 'ext.redactor.ER...', Array)
+#2 /private/var/www/framework/web/CBaseController.php(172): CBaseController->createWidget('ext.redactor.ER...', Array)
+#3 /private/var/www/htdocs/themes/admin/views/news/admin/_form.php(58): CBaseController->widget('ext.redactor.ER...', Array)
+#4 /private/var/www/framework/web/CBaseController.php(126): require('/private/var/ww...')
+#5 /private/var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/private/var/ww...', Array, true)
+#6 /private/var/www/framework/web/CController.php(869): CBaseController->renderFile('/private/var/ww...', Array, true)
+#7 /private/var/www/htdocs/themes/admin/views/news/admin/create.php(18): CController->renderPartial('_form', Array)
+#8 /private/var/www/framework/web/CBaseController.php(126): require('/private/var/ww...')
+#9 /private/var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/private/var/ww...', Array, true)
+#10 /private/var/www/framework/web/CController.php(869): CBaseController->renderFile('/private/var/ww...', Array, true)
+#11 /private/var/www/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#12 /private/var/www/htdocs/protected/modules/news/controllers/AdminController.php(36): CController->render('create', Array)
+#13 /private/var/www/framework/web/actions/CInlineAction.php(49): AdminController->actionCreate()
+#14 /private/var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /private/var/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /private/var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /private/var/www/htdocs/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#18 /private/var/www/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#19 /private/var/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /private/var/www/framework/web/CController.php(291): CFilterChain->run()
+#21 /private/var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /private/var/www/framework/web/CWebApplication.php(282): CController->run('create')
+#23 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('news/admin/crea...')
+#24 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /private/var/www/htdocs/index.php(12): CApplication->run()
+#26 {main}
+REQUEST_URI=/htdocs/index.php?r=news/admin/create
+---
+2014/07/11 12:48:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "projects".' in /private/var/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /private/var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#1 /private/var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /private/var/www/htdocs/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/htdocs/index.php?r=projects
+HTTP_REFERER=http://localhost/htdocs/index.php?r=site/page&view=about
+---

@@ -1,0 +1,61 @@
+#userpic_edit {
+    background: url("/themes/production/images/pencil_edit_img.png") no-repeat scroll 0 0 / 20px 20px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 20px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+#userpic_save {
+    background: url("/themes/production/images/userpic_save_img.png") no-repeat scroll 0 0 / 20px 40px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 20px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+#profile_edit {
+    background: url("/themes/production/images/pencil_edit_profile.png") no-repeat scroll 0 0 / 20px 20px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 20px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+#User_email{
+    font-size: 14px;
+    height: 14px;
+    margin: 0 0 0 -6px;
+    width: 220px !important;
+}
+
+#user-form-update input:not([type=submit]){
+    font-size: 16px;
+    width: 145px;
+    margin: -2px 11px 0px -6px;
+    height: 14px;
+}
+
+.up_name .val_captions{
+    width: 210px;
+}
+
+.up_name .val_captions {
+    display: inline-block;
+    width: 160px;
+}
+
+.up_name input{
+    width: 160px;
+}
+
+.user_profile_action_bar a{
+    min-width: 120px;
+}
+
+.up_pic img{
+    margin-bottom: 10px;
+}
